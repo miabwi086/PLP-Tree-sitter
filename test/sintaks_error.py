@@ -1,0 +1,2 @@
+def fungsi
+    pass

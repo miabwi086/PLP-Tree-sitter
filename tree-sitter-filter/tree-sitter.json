@@ -1,0 +1,43 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "filter",
+      "camelcase": "Filter",
+      "title": "Filter language",
+      "scope": "source.filter",
+      "file-types": [
+        "filter"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "^filter$",
+      "class-name": "TreeSitterFilter"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Grammar for enterprise admin search DSL",
+    "authors": [
+      {
+        "name": "Fatih",
+        "email": "prawahyudin@gmail.com",
+        "url": ""
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/username/tree-sitter-filter",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}

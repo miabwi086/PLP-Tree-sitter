@@ -1,0 +1,26 @@
+(module (expression_statement (assignment left: (identifier) right: (integer))) (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (return_statement (integer))) alternative: (else_clause body: (block (return_statement (integer))))))))
+
+node:
+module, expression_statement, assignment, identifier, integer, function_definition, parameters, block, if_statement, comparison_operator, return_statement, else_clause
+
+node anonim:
+=, (, ), :, ==, def, if, return, else
+
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block)) (return_statement (string (string_start) (string_content) (string_end))))))
+
+node:
+module, class_definition, identifier, block, function_definition, parameters, return_statement, string, string_start, string_content, string_end
+
+node anonim:
+(, ), :, ', class, def, return
+
+(module (class_definition name: (identifier) (ERROR (identifier) (parameters (identifier)) (identifier)) body: (block (expression_statement (string (string_start) (string_content) (string_end))))))
+
+Error karena menghapus ':' pada def hadir(siswa) membuat function_definition dan salah satu block tidak muncul pada tree.
+
+
+Perbedaan children dan named_chieldren:
+
+- children: semua anak dari sebuah node, termasuk node anonim (token/keyword/punctuation seperti def, (, ), :, return) dan node bernama.
+
+- named_children: hanya anak yang bernama (node dari rule grammar seperti identifier, parameters, block, function_definition, dll.), tanpa node anonim.
