@@ -1,6 +1,5 @@
 # PLP Tree-sitter 
 
-## Projek Selesai
 Repositori ini menyangkut coursework yang sudah selesai untuk materi Tree-sitter, mencakup 6 tugas praktik dan mini-proyek. Kinerja menunjukkan pemahaman terhadap trees syntaks, penulisan query, grammar development, dan analisis kode menggunakan tree-sitter.
 
 ## Struktur Pengumpulan
